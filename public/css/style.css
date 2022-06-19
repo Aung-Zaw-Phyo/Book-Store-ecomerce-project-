@@ -1,0 +1,138 @@
+
+.logoText{
+    color: rgb(81, 4, 4);
+    font-weight: bold;
+}
+.logoImage{
+    color: rgb(74, 8, 8);
+}
+.fixDropdown{
+    list-style: none;
+    position: absolute;
+    left: -200% !important;
+    margin-top: 15px !important;
+    background-color: ;
+}
+.menu{
+    height: 3px;
+    width: 35px;
+    background-color: rgb(48, 16, 16);
+    margin: 5px;
+    border-radius: 2px;
+}
+.fs{
+    font-size: 15px !important;
+}
+.menuContainer{
+    cursor: pointer;
+}
+.line1, .line2, .line3{
+    transition: all .2s ease-in;
+}
+.remove{
+    opacity: 0;
+}
+.line1Deg{
+    transform: rotate(45deg) translate(7px, 5px);
+}
+.line3Deg{
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+.overlay{
+    opacity: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 5px;
+    position: fixed;
+    top: 8px;
+    left: 0;
+    right: 0;
+    bottom: 0 !important;
+    /* background-color: rgba(255, 0, 238, 0.756); */
+    background-color: rgba(208, 135, 235, 0.794);
+    z-index: -1;
+}
+.overlayChild{
+    height: 90% !important;
+    border-radius: 10px;
+    z-index: 1000 !important;
+}
+.opacityAndZindex{
+    opacity: 1;
+    z-index: 1;
+}
+.navUpDown{
+    transition: all .03s;
+    top: 48px;
+}
+
+/* navbar end  */
+
+/* heroSectionHome */
+
+.heroSectionHome{
+   background-image: url('/images/background/bac1.jpg');
+   background-position: center;
+   background-size: cover;
+}
+
+.normal-fs{
+    font-size: large;
+}
+
+.heroBacHome{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://templatekit.jegtheme.com/docbook/wp-content/uploads/sites/277/2022/05/Book2-Cover-Mockup-S32EJNB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.divider{
+    height: 3px;
+    width: 150px;
+    background-color: black;
+}
+
+/* heroSectionHome */
+
+/* heroSectionShop */
+
+.heroBacShop{
+    background-image: url('https://cdn.shopify.com/s/files/1/0359/5979/9852/files/slider.jpg?v=1585450258');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+/* heroSectionShop */
+
+/* heroBacAbout */
+
+.heroBacAbout{
+    background-image: url('/images/background/heading-bg.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+/* heroBacAbout */
+.bookImg{
+    transition: all .6s;
+}
+
+.cardCon:hover .bookImg{
+    transform: scale(1.1);
+}
+
+.cardCon{
+    position: relative;
+}
+
+.price{
+    position: absolute;
+    top: 5px;
+    border-radius: 7px;
+}
