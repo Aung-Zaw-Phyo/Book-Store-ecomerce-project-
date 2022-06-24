@@ -24,7 +24,8 @@ Admin Features
 - Check messages
 - Check subscribers
 
-Real admin
+Real admin 
+(username - julian , email - julian@gmail.com and password - professional)
 - All admin features
 - Can permit to be user as normal admin
 - Check normal adminʼs posted products list
