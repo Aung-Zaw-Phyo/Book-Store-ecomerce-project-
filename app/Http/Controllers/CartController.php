@@ -37,7 +37,7 @@ class CartController extends Controller
             'totalPrice.required' => 'You need to shop before order!',
         ]);
         $formData['user_id']=auth()->id();
-
+        
         Order::create($formData);
 
         $carts = auth()->user()->carts;

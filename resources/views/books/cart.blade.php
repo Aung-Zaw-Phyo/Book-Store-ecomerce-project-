@@ -19,16 +19,15 @@
                     {{$totalPrice = 0}}
                 </div>
                 @foreach ($carts as $cart)
-                <div class="col-md-4 p-3">
-                    <div class="card p-2 text-center">
+                <div class="col-md-3 p-3">
+                    <div class="card cardCon p-2 text-center">
                         <form action="/cart/cancel/{{$cart->id}}" method="POST">
                             @csrf
-                            <img src="/storage/{{$cart->book->thumbnail}}" class="my-4" style="height: 340px;" alt="">
+                            <img src="/storage/{{$cart->book->thumbnail}}"  class="my-3 img-thumbnail bookImg" style="height: 280px;"  alt="">
                             <div class="fs-5 my-1 ">{{$cart->book->name}}</div>
                             <div class="normal-fs">Author - {{$cart->book->author}}</div>
-                            <div class="my-1 normal-fs text-secondary">Category - {{$cart->book->category->name}}</div>
                             <div class="normal-fs">Total - {{$cart->total}}</div>
-                            <div class="normal-fs">Price - {{$cart->book->price}}$ / total price - {{$cart->total*$cart->book->price}}$</div>
+                            <div class=" mb-1 price bg-danger text-light py-1 px-2">{{$cart->book->price}}$ / {{$cart->total*$cart->book->price}}$ </div>
                             <input type="hidden" name='book_id' value="">
                             <button class="btn btn-outline-primary my-2 mt-3 w-50" type="submit">Cancel</button>
                         </form>

@@ -35,10 +35,11 @@
                     <div class="card p-4">
                         <form action="/review/add" method="POST">
                             @csrf
-                            <textarea  name="body" type="text" 
+                            {{-- <textarea  name="body" 
                                 class="form-control " placeholder="Enter your message ..." 
                                 cols="30" rows="5" required >
-                            </textarea>
+                            </textarea> --}}
+                            <textarea name="body" class="form-control" cols="30" rows="5" placeholder="Enter your message ..." required>{{old('body')}}</textarea>
                             <x-error name='body' />
                             <button class="btn btn-lg btn-primary d-block mx-auto mt-4"  style="z-index: 0 !important;" type="submit">Submit</button>
                         </form>

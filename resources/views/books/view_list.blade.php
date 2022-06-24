@@ -1,6 +1,9 @@
 <x-layout>
     <div>
         <div class="container py-5">
+            @if ($orders->count())
+            <h3 class="text-center my-3">This customer had bought these books.</h3>
+            @endif
             <div class="row">
                 @if ($orders->count())
                     @foreach ($orders as $order)
@@ -20,7 +23,7 @@
                     @endforeach
                 @else
                     <div class="col-12 my-3 text-center">
-                        <div class="alert alert-warning text-center py-3 m-0"> This user don't still buy anything . </div>
+                        <div class="alert alert-warning text-center py-3 m-0"> This customer don't still buy anything . </div>
                     </div>
                 @endif
             </div>

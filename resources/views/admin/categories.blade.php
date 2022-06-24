@@ -1,7 +1,12 @@
 <x-adminLayout>
-    @if (session('info'))
-        <div class="alert alert-warning text-center py-3 m-0"> {{session('info')}} </div>
-    @endif
+  @if (session('info'))
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <div class="container">
+          <strong>{{session('info')}}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+  </div>
+@endif
     <div class="container py-5 p-0">
         <h2 class="text-center">All Categories</h2>
         <div class="row mt-4">
